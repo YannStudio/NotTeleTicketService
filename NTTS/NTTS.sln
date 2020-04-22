@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTS.UI.WPF", "NTTS.UI.WPF\NTTS.UI.WPF.csproj", "{D665127C-9D6E-47BA-80C6-07FEA45F7301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTS.Models", "NTTS.Models\NTTS.Models.csproj", "{43CF40F8-18FD-42FD-8CD3-7984D0A20B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTS.Services", "NTTS.Services\NTTS.Services.csproj", "{6EC274EE-F3D3-4CDF-BB9B-D759CF50D2AB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D665127C-9D6E-47BA-80C6-07FEA45F7301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D665127C-9D6E-47BA-80C6-07FEA45F7301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D665127C-9D6E-47BA-80C6-07FEA45F7301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D665127C-9D6E-47BA-80C6-07FEA45F7301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43CF40F8-18FD-42FD-8CD3-7984D0A20B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CF40F8-18FD-42FD-8CD3-7984D0A20B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CF40F8-18FD-42FD-8CD3-7984D0A20B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CF40F8-18FD-42FD-8CD3-7984D0A20B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC274EE-F3D3-4CDF-BB9B-D759CF50D2AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC274EE-F3D3-4CDF-BB9B-D759CF50D2AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC274EE-F3D3-4CDF-BB9B-D759CF50D2AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC274EE-F3D3-4CDF-BB9B-D759CF50D2AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
