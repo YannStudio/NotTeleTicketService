@@ -5,6 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NTTS.UI.WPF.Views.Pages"
       mc:Ignorable="d" 
+      DataContext="{Binding Start, Source={StaticResource Locator}}"
+      FontFamily="Rockwell Nova"
       d:DesignHeight="800" d:DesignWidth="300"
       Title="Start">
 
@@ -17,6 +19,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         
@@ -27,12 +30,62 @@
             Grid.Row="0"
             Background="Transparent"
             Padding="10"
+            HorizontalContentAlignment="Center"
             BorderThickness="0"
+            SelectedItem="{Binding SelectedEvent}"
+            ItemsSource="{Binding Events}"
             >
-            
-        </ListView>       
-        
-        
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel
+                        Margin="0,0,0,20"
+                        HorizontalAlignment="Center"
+                        >
+                        <TextBlock
+                            Foreground="White"
+                            FontSize="30"
+                            Text="{Binding EventName}"
+                            />
+
+                        <StackPanel
+                            Orientation="Horizontal">
+                            
+                            <TextBlock
+                                Foreground="White"
+                                Text="Beschikbare plaatsen:"
+                                />
+                            <TextBlock
+                                Foreground="White"
+                                Text="{Binding AvailableTickets}"
+                                />
+                        </StackPanel>
+                        
+                        <TextBlock
+                            Margin="0,10,0,0"
+                            Foreground="White"
+                            Text="{Binding EventId}"
+                            TextWrapping="Wrap"/>
+
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+        <TextBlock
+            Foreground="White"
+            VerticalAlignment="Bottom"
+            Text="{Binding SelectedEvent.EventId}"/>
+
+        <Button
+            Grid.Column="0"
+            Grid.Row="1"
+            BorderThickness="0"
+            Background="White"
+            FontSize="25"
+            Content="Reserveer tickets"
+            Command="{Binding GetTicketCommand}"/>
 
     </Grid>
 </Page>

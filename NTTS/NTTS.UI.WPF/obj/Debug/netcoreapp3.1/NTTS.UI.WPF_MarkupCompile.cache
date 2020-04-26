@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Yannick\source\repos\NotTeleTicketService\NTTS\NTTS.UI.WPF\obj\Debug\netcoreapp3.1\
+C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.UI.WPF\obj\Debug\netcoreapp3.1\
 NTTS.UI.WPF
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\Yannick\source\repos\NotTeleTicketService\NTTS\NTTS.UI.WPF\App.xaml
-2893604835
+C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.UI.WPF\App.xaml
+3389446736
 
-71389512893
-196-659918419
-Views\MainWindow.xaml;Views\Pages\Start.xaml;
+12-1534454424
+1961597309167
+Views\MainWindow.xaml;Views\Pages\Start.xaml;Views\Pages\TicketInformation.xaml;
 
 False
 

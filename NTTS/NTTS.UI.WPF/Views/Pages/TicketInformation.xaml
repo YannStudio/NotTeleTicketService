@@ -1,0 +1,151 @@
+﻿<Page x:Class="NTTS.UI.WPF.Views.Pages.TicketInformation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NTTS.UI.WPF.Views.Pages"
+      mc:Ignorable="d" 
+      DataContext="{Binding TicketInformation, Source={StaticResource Locator}}"
+      FontFamily="Rockwell Nova"
+      d:DesignHeight="800" d:DesignWidth="300"
+      Title="TicketInformation">
+
+    <Grid>
+
+        <!--  Grid and row defintions for view  -->
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        
+        <!--  Even informatio  -->
+
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="0"
+            Margin="10"
+            Orientation="Vertical"    
+            HorizontalAlignment="Stretch"
+            >
+            <TextBlock
+                Foreground="White"
+                Text="{Binding SelectedEvent.EventName}"
+                FontSize="35"
+                />
+
+            <TextBlock
+                Foreground="White"
+                TextWrapping="Wrap"
+                Text="{Binding SelectedEvent.EventDescription}"
+                FontSize="15"/>
+
+        </StackPanel>
+        
+        <!--  Amount select section  -->
+
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="1"
+            Margin="20"
+            Orientation="Vertical"
+            HorizontalAlignment="Stretch">
+
+            <StackPanel
+                Margin="0,0,0,20"
+                Orientation="Horizontal"
+                VerticalAlignment="Center">
+
+                <TextBlock
+                    FontSize="15"
+                    Foreground="White"
+                    Text="Beschikbare tickets: "/>
+
+                <TextBlock
+                Foreground="White"
+                FontSize="15"
+                Text="{Binding SelectedEvent.AvailableTickets}"/>
+                
+            </StackPanel>
+
+            <Label
+                Foreground="White"
+                FontSize="15"
+                Content="Aantal tickets"/>
+            
+            <!--  Number picker  -->
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                
+                <Rectangle
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Fill="White"/>
+                
+                <TextBlock
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Margin="5"
+                    Text="{Binding AmountSelectedTickets}"
+                    VerticalAlignment="Center"
+                    TextAlignment="Center"/>
+
+                <StackPanel
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Margin="5,0,0,0"
+                    Orientation="Vertical">
+
+                    <Button
+                        Margin="0,0,0,5"
+                        Background="white"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Content="+"
+                        />
+
+                    <Button
+                        Background="white" 
+                        FontSize="20"
+                        
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Content="-"
+                        />
+
+                </StackPanel>
+                
+
+
+            </Grid>
+            
+        </StackPanel>
+
+        <!--  Buy ticket button  -->
+
+        <Button
+            Grid.Column="0"
+            Grid.Row="2"
+            BorderThickness="0"
+            Background="White"
+            FontSize="20"
+            Content="Ga door naar zitplaatsen"
+            />
+
+    </Grid>
+</Page>
