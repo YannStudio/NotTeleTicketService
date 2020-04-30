@@ -70,7 +70,7 @@ namespace NTTS.UI.WPF.ViewModels
 
         private void onTicketInformationDetailMessageReceived(TicketInformationDetailMessage message)
         {
-            AmountOfSelectedTickets = message.AmountOfSelectedTickets;
+            AmountOfSelectedTickets = message.AmountOfSelectedTickets;            
             IList<Seat> seats = _seatingService.GetSeats(SelectedEvent, AmountOfSelectedTickets);
             Seats = new ObservableCollection<Seat>(seats);
         }

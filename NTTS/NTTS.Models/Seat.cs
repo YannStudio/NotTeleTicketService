@@ -9,6 +9,7 @@ namespace NTTS.Models
         public int RowNumber { get; set; }
         public int SeatNumber { get; set; }
         public string State { get; set; }
+        public int Score { get; set; }
 
         public Seat(int rowNumber, int seatNumber, string state)
         {
