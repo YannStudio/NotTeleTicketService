@@ -6,5 +6,6 @@ namespace NTTS.Services
     public interface IEventService
     {
         IList<Event> GetAllEvents();
+        
     }
 }

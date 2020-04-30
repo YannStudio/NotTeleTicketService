@@ -48,8 +48,24 @@ namespace NTTS.UI.WPF.ViewModels
 
         #region Methods 
         public void buyTicket()
-        {              
+        {
+            MessengerInstance.Send(new FrameNavigationMessage("Seating"));
+            MessengerInstance.Send(new EventDetailMessage(SelectedEvent));
+            MessengerInstance.Send(new TicketInformationDetailMessage(AmountSelectedTickets));
+        }
 
+        private void increaseTicketAmount()
+        {
+            AmountSelectedTickets++;
+            DecreaseTicketCommand.RaiseCanExecuteChanged();
+            IncreaseTicketCommand.RaiseCanExecuteChanged();
+        }
+
+        private void decreaseTicketAmount()
+        {
+            AmountSelectedTickets--;
+            DecreaseTicketCommand.RaiseCanExecuteChanged();
+            IncreaseTicketCommand.RaiseCanExecuteChanged();
         }
 
         private void onEventDetailMessageReceived(EventDetailMessage message)
@@ -57,11 +73,35 @@ namespace NTTS.UI.WPF.ViewModels
             SelectedEvent = message.EventInfo;
         }
 
+        public bool checkTicketAmountCanDescrease()
+        {
+            bool result = false;
+            if (AmountSelectedTickets != 1)
+            {
+                result = true;
+            }
+            return result;
+        }
+
+        public bool checkTicketAmountCanIncrease()
+        {
+            bool result = false;
+            if (AmountSelectedTickets != SelectedEvent.AvailableTickets)
+            {
+                result = true;
+            }
+            return result;
+        }
+
         #endregion
 
         #region Commands    
         private RelayCommand _buyTicketCommand;
+        private RelayCommand _increaseTicketAmount;
+        private RelayCommand _decreaseTicketAmount;
         public RelayCommand BuyTicketCommand => _buyTicketCommand ??= new RelayCommand(buyTicket);
+        public RelayCommand IncreaseTicketCommand => _increaseTicketAmount ??= new RelayCommand(increaseTicketAmount, checkTicketAmountCanIncrease);
+        public RelayCommand DecreaseTicketCommand => _decreaseTicketAmount ??= new RelayCommand(decreaseTicketAmount, checkTicketAmountCanDescrease);
 
         #endregion
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj": {}
+    "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj": {
+    "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj",
         "projectName": "NTTS.Models",
-        "projectPath": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj",
+        "projectPath": "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj",
         "packagesPath": "C:\\Users\\Yannick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\obj\\",
+        "outputPath": "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj": {
+    "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj",
         "projectName": "NTTS.Services",
-        "projectPath": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj",
+        "projectPath": "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj",
         "packagesPath": "C:\\Users\\Yannick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\obj\\",
+        "outputPath": "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj": {
-                "projectPath": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj"
+              "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj": {
+                "projectPath": "C:\\Users\\Yannick\\source\\repos\\NotTeleTicketService\\NTTS\\NTTS.Models\\NTTS.Models.csproj"
               }
             }
           }

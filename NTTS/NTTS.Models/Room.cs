@@ -6,5 +6,6 @@ namespace NTTS.Models
 {
     public class Room
     {
+        
     }
 }

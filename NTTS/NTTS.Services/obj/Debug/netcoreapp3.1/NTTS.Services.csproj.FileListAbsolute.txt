@@ -1,11 +1,11 @@
+C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.csprojAssemblyReference.cache
+C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.AssemblyInfoInputs.cache
+C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.AssemblyInfo.cs
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\bin\Debug\netcoreapp3.1\NTTS.Services.deps.json
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\bin\Debug\netcoreapp3.1\NTTS.Services.dll
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\bin\Debug\netcoreapp3.1\NTTS.Services.pdb
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\bin\Debug\netcoreapp3.1\NTTS.Models.dll
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\bin\Debug\netcoreapp3.1\NTTS.Models.pdb
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.csprojAssemblyReference.cache
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.AssemblyInfoInputs.cache
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.AssemblyInfo.cs
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.csproj.CopyComplete
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.dll
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Services\obj\Debug\netcoreapp3.1\NTTS.Services.pdb

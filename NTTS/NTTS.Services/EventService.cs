@@ -15,11 +15,12 @@ namespace NTTS.Services
             {
                 Guid eventId = Guid.NewGuid();
                 Random r = new Random();
-                Event randomEvents = new Event(eventId,"Das Boot", "De beste film ooit gemaakt volgens het Vodhopper team", 25,r.Next(0,25));
+                Event randomEvents = new Event(eventId,"Das Boot", "De beste film ooit gemaakt volgens het Vodhopper team", 5,r.Next(1,4));
                 events.Add(randomEvents);
             }          
             
             return events;
         }
+
     }
 }

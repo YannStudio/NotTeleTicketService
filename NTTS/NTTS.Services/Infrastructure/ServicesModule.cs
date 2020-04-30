@@ -7,6 +7,7 @@ namespace NTTS.Services.Infrastructure
         protected override void Load(ContainerBuilder builder)
         {           
             builder.RegisterType<EventService>().AsImplementedInterfaces();
+            builder.RegisterType<SeatingService>().AsImplementedInterfaces();
         }
     }
 }

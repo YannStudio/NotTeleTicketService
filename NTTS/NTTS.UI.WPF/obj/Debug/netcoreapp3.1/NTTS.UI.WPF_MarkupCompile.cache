@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.UI.WPF\App.xaml
-3389446736
+4-1542863222
 
-12-1534454424
+16-353052972
 1961597309167
-Views\MainWindow.xaml;Views\Pages\Start.xaml;Views\Pages\TicketInformation.xaml;
+Views\MainWindow.xaml;Views\Pages\Seating.xaml;Views\Pages\Start.xaml;Views\Pages\TicketInformation.xaml;
 
 False
 
