@@ -1,5 +1,5 @@
 ﻿NTTS.UI.WPF
-
+1.0.0.0
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.UI.WPF\App.xaml
 4-1542863222
 
-17-1653209428
+18435621305
 1961597309167
 Views\MainWindow.xaml;Views\Pages\Seating.xaml;Views\Pages\Start.xaml;Views\Pages\TicketInformation.xaml;
 

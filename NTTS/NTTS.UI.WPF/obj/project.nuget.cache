@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "FDW3f0CrVsiHSumENPMzrJPDePAMONxMTq8/CSE/98Y4GJvfd6uIwkT9JwDLZ7cd4kuLQQDe/sF+YB4zYO3uZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.UI.WPF\\NTTS.UI.WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yannick\\.nuget\\packages\\autofac\\5.1.2\\autofac.5.1.2.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\mvvmlightlibsstd10\\5.4.1.1\\mvvmlightlibsstd10.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

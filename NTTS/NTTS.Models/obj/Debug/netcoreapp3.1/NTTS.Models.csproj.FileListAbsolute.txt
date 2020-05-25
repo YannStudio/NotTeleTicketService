@@ -1,8 +1,0 @@
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\bin\Debug\netcoreapp3.1\NTTS.Models.deps.json
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\bin\Debug\netcoreapp3.1\NTTS.Models.dll
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\bin\Debug\netcoreapp3.1\NTTS.Models.pdb
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\obj\Debug\netcoreapp3.1\NTTS.Models.AssemblyInfoInputs.cache
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\obj\Debug\netcoreapp3.1\NTTS.Models.AssemblyInfo.cs
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\obj\Debug\netcoreapp3.1\NTTS.Models.dll
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\obj\Debug\netcoreapp3.1\NTTS.Models.pdb
-C:\Users\Yannick\Source\Repos\NotTeleTicketService\NTTS\NTTS.Models\obj\Debug\netcoreapp3.1\NTTS.Models.csprojAssemblyReference.cache

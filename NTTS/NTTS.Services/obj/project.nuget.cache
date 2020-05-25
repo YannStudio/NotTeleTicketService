@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yft7/YtZDED383tBmYPz3zV0tfz81JCeWA0JBw4P11nw5Roz4ejWfw32xtl0dBxITTb2A0O7UPOtaL3qrP0F0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yannick\\Source\\Repos\\NotTeleTicketService\\NTTS\\NTTS.Services\\NTTS.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yannick\\.nuget\\packages\\autofac\\5.1.2\\autofac.5.1.2.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

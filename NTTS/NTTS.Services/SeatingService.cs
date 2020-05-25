@@ -35,7 +35,8 @@ namespace NTTS.Services
             {
                 for (int x = 0; x < quantityRows; x++)
                 {
-                    Seat newSeat = new Seat(y, x, availableState);
+                    Seat newSeat = new Seat(y+1, x+1, availableState);
+                    newSeat.Score = GetScoreOfSeat(newSeat);
                     seats[y, x] = newSeat;
                 }
             }
@@ -68,8 +69,8 @@ namespace NTTS.Services
                                  where item.RowNumber == i
                                  select item;
 
-                
-                result = currentRow.FindConsecutiveSeats(AmountOfSelectedTickets).ToList();
+
+                result = FindConsecutiveSeats(currentRow, AmountOfSelectedTickets).ToList();
                 if (result.Count != 0)
                 {
                     foreach (var item in result)
@@ -77,13 +78,15 @@ namespace NTTS.Services
                         int Score = 0;
                         foreach (var seat in item)
                         {
-                            Score = Score + seat.RowNumber;
+                            Score = Score + seat.Score;
                         }
                         SeatingPossibility SeatingResult = new SeatingPossibility(item, Score);
                         possibilities.Add(SeatingResult);
                     }
                 }                
             }
+            
+            // Get object with highest score and set seat to selected state
 
             var maxObject = possibilities.OrderByDescending(item => item.Score).First();
 
@@ -92,6 +95,7 @@ namespace NTTS.Services
                 item.State = selectedState;
             }
 
+            // Convert 2d array to IList
 
             foreach (var item in seats)
             {
@@ -100,5 +104,75 @@ namespace NTTS.Services
 
             return results;
         }
+
+        // Find n amount consectutive seats in row
+
+        private IEnumerable<IEnumerable<Seat>> FindConsecutiveSeats(IEnumerable<Seat> sequence, int sequenceSize)
+        {
+            IEnumerable<Seat> results = Enumerable.Empty<Seat>();
+            int count = 0;
+
+            foreach (var item in sequence)
+            {
+                if (item.State == "Available")
+                {
+                    results = results.Concat(Enumerable.Repeat(item, 1));
+                    count++;
+
+                    if (count == sequenceSize)
+                    {
+                        yield return results;
+                        results = results.Skip(1);
+                        count--;
+                    }
+                }
+                else
+                {
+                    count = 0;
+                    results = Enumerable.Empty<Seat>();
+                }
+            }
+        }
+
+        // Calculate seat score
+
+        private int GetScoreOfSeat(Seat seat)
+        {
+            int result = 0;
+
+            if (seat.SeatNumber == 1 || seat.SeatNumber == 5)
+            {
+                result = 1; 
+            }
+
+            if (seat.SeatNumber == 2 || seat.SeatNumber == 4)
+            {
+                result = 2;
+            }
+
+            if (seat.SeatNumber == 3)
+            {
+                result = 3;
+            }
+
+            if (seat.RowNumber == 1 || seat.RowNumber == 5)
+            {
+                result = result + 1;
+            }
+
+            if (seat.RowNumber == 2 || seat.RowNumber == 4)
+            {
+                result = result + 2;
+            }
+
+            if (seat.RowNumber == 3)
+            {
+                result = result + 3;
+            }
+
+
+            return result;
+        } 
+
     }
 }
